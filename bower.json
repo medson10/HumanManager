@@ -1,0 +1,17 @@
+{
+  "name": "human_manager",
+  "description": "Repositorio destinado ao desenvolvimento do projeto da aula de Laboratorio de Engenharia de Software",
+  "main": "index.js",
+  "authors": [
+    "medson10 <medson.oliveira@fatec.sp.gov.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/medson10/HumanManager",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "human_manager",
+  "version": "1.0.0",
+  "description": "Repositorio destinado ao desenvolvimento do projeto da aula de Laboratorio de Engenharia de Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medson10/HumanManager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medson10/HumanManager/issues"
+  },
+  "homepage": "https://github.com/medson10/HumanManager#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
