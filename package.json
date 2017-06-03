@@ -2,10 +2,10 @@
   "name": "human_manager",
   "version": "1.0.0",
   "description": "Repositorio destinado ao desenvolvimento do projeto da aula de Laboratorio de Engenharia de Software",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "nodemon --exec babel-node index.js"
+    "babel": "nodemon --exec babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,18 @@
   },
   "homepage": "https://github.com/medson10/HumanManager#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-load": "^1.1.16",
+    "express-session": "^1.15.3",
     "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.4",
+    "mongoose-findorcreate": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
