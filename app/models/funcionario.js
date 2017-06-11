@@ -14,10 +14,6 @@ module.exports = function() {
       type: String,
       required: true
     },
-    genero: {
-      type: String,
-      required: true
-    },
     telefone: {
       type: String
     },
@@ -27,6 +23,5 @@ module.exports = function() {
     }
 
   });
-
   return mongoose.model('Funcionario', schema);
 };
