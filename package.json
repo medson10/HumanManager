@@ -27,9 +27,9 @@
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11",
     "method-override": "^2.3.9",
+    "mongo-sanitize": "^1.0.0",
     "mongodb": "^2.2.28",
-    "mongoose": "^4.10.4",
-    "mongoose-findorcreate": "^2.0.0"
+    "mongoose": "^4.10.4"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
