@@ -5,6 +5,20 @@ module.exports = function(app) {
 
   let controller = {};
 
+  controller.by_sector = function(req, res) {
+    let setor_nome = req.params.setor_nome;
+    let promise = Funcionario.find({ setor: setor_nome }).exec()
+      .then(
+        function(funcionarios) {
+          res.json(funcionarios);
+        },
+        function(erro) {
+          console.error(erro);
+          res.status(500).json(erro);
+        }
+      );
+  };
+
   controller.listaFuncionarios = function(req, res) {
     let promise = Funcionario.find().exec()
     .then(
