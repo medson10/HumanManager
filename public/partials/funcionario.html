@@ -1,0 +1,44 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <h2 class="md-flex">Cadastro de funcionário</h2>
+  </div>
+</md-toolbar>
+<md-content layout-padding>
+    <div>
+      <form name="FuncionarioForm" ng-submit="salva()">
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Nome</label>
+            <input id="nome" required ng-model="funcionario.nome">
+          </md-input-container>
+
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Email</label>
+            <input id="email" required ng-model="funcionario.email">
+          </md-input-container>
+        </div>
+
+        <md-input-container class="md-block">
+          <label>Cargo</label>
+          <input id="cargo" required ng-model="funcionario.cargo">
+        </md-input-container>
+
+        <md-input-container md-no-float class="md-block">
+          <label>Telefone</label>
+          <input id="telefone" required ng-model="funcionario.telefone">
+        </md-input-container>
+
+        <md-input-container md-no-float class="md-block">
+          <label>Setor</label>
+          <input id="setor" required ng-model="funcionario.setor">
+        </md-input-container>
+
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button type="submit" class="md-raised">Salvar</md-button>
+            <md-button href="#/" class="md-raised md-primary">Voltar</md-button>
+          </section>
+          <p ng-show="mensagem.texto">
+            {{mensagem.texto}}
+        </p>
+    </form>
+</md-content>

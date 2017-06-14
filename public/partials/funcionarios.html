@@ -1,0 +1,28 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <h2 class="md-flex">Bem vindo ao HumanManager</h2>
+  </div>
+</md-toolbar>
+
+<md-content class="full-heigth" layout-padding>
+  <md-list>
+    <md-list-item class="md-3-line" ng-repeat="funcionario in funcionarios">
+      <div class="md-list-item-text">
+        <h2>{{funcionario.nome}}</h2>
+        <h3>Email: {{funcionario.email}}</h3>
+        <p>Cargo: {{funcionario.cargo}}</p>
+        <p>Telefone: {{funcionario.telefone}}</p>
+        <p>Setor: {{funcionario.setor}}</p>
+        <br></br>
+      </div>
+      <md-button layout-padding ng-href="#/funcionarios/{{funcionario._id}}" class="md-raised">Editar</md-button>
+      <md-button ng-click="remove(funcionario)" class="md-raised md-warn">Remover</md-button>
+
+      <md-divider layout="row" layout-margin class ="divider"></md-divider>
+    </md-list-item>
+  </md-list>
+  <md-button ng-href="#/funcionario" ng-class="{ visible: selectedTab==0 }"class="md-fab md-fab-bottom-right"  aria-label="upload photo" >
+               +
+  </md-button>
+
+</md-content>
